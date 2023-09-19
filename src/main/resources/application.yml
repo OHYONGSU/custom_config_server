@@ -6,7 +6,12 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/OHYONGSU/p_config.git
-          search-paths: '{application}/{profile}, infra/host/{profile}, infra/{profile}'
-
+          uri: https://github.com/jobisnvillains/szs-config-test.git
+          search-paths:
+            - '{application}/{profile}'
+            - 'infra/*/{profile}' # 동작함
+#            - 'infra/sdk/*/{profile}' # 동작함
+            - 'infra/*/*/{profile}' # 동작함
+          username: 'OHYONGSU'
+          password: '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'
 
